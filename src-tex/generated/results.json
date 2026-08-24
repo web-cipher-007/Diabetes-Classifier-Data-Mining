@@ -1,0 +1,149 @@
+{
+  "dataset": {
+    "records": 768,
+    "features": 8,
+    "duplicates": 0,
+    "class_counts": {
+      "0": 500,
+      "1": 268
+    },
+    "zero_as_missing_counts": {
+      "Glucose": 5,
+      "BloodPressure": 35,
+      "SkinThickness": 227,
+      "Insulin": 374,
+      "BMI": 11
+    }
+  },
+  "split": {
+    "random_state": 42,
+    "training_records": 614,
+    "test_records": 154,
+    "training_class_counts": {
+      "0": 400,
+      "1": 214
+    },
+    "test_class_counts": {
+      "0": 100,
+      "1": 54
+    }
+  },
+  "preprocessing": {
+    "zero_as_missing_columns": [
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI"
+    ],
+    "training_medians": {
+      "Glucose": 117.0,
+      "BloodPressure": 72.0,
+      "SkinThickness": 29.0,
+      "Insulin": 125.0,
+      "BMI": 32.4
+    },
+    "scaling": "StandardScaler fitted on the training set only"
+  },
+  "models": {
+    "Custom KNN": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.625,
+      "sensitivity": 0.5555555555555556,
+      "specificity": 0.82,
+      "f1": 0.5882352941176471,
+      "roc_auc": 0.7900000000000001,
+      "mcc": 0.3868989217888074,
+      "tn": 82,
+      "fp": 18,
+      "fn": 24,
+      "tp": 30
+    },
+    "Decision Tree": {
+      "accuracy": 0.7857142857142857,
+      "precision": 0.6981132075471698,
+      "sensitivity": 0.6851851851851852,
+      "specificity": 0.84,
+      "f1": 0.6915887850467289,
+      "roc_auc": 0.7887037037037039,
+      "mcc": 0.5274857417680364,
+      "tn": 84,
+      "fp": 16,
+      "fn": 17,
+      "tp": 37
+    },
+    "SVM": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6521739130434783,
+      "sensitivity": 0.5555555555555556,
+      "specificity": 0.84,
+      "f1": 0.6,
+      "roc_auc": 0.7962962962962963,
+      "mcc": 0.4123951744684367,
+      "tn": 84,
+      "fp": 16,
+      "fn": 24,
+      "tp": 30
+    },
+    "Gaussian NB": {
+      "accuracy": 0.7012987012987013,
+      "precision": 0.5666666666666667,
+      "sensitivity": 0.6296296296296297,
+      "specificity": 0.74,
+      "f1": 0.5964912280701754,
+      "roc_auc": 0.7646296296296297,
+      "mcc": 0.36167967605963075,
+      "tn": 74,
+      "fp": 26,
+      "fn": 20,
+      "tp": 34
+    },
+    "MLP": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6153846153846154,
+      "sensitivity": 0.5925925925925926,
+      "specificity": 0.8,
+      "f1": 0.6037735849056604,
+      "roc_auc": 0.8103703703703704,
+      "mcc": 0.3961295342422729,
+      "tn": 80,
+      "fp": 20,
+      "fn": 22,
+      "tp": 32
+    }
+  },
+  "mlp_permutation_importance": {
+    "Pregnancies": {
+      "mean": 0.01654938271604943,
+      "std": 0.019388837792410497
+    },
+    "Glucose": {
+      "mean": 0.11700617283950623,
+      "std": 0.02515067003725078
+    },
+    "BloodPressure": {
+      "mean": -0.0072160493827160095,
+      "std": 0.007911039922769689
+    },
+    "SkinThickness": {
+      "mean": -0.008864197530864155,
+      "std": 0.010640628942932542
+    },
+    "Insulin": {
+      "mean": 0.02414814814814823,
+      "std": 0.015229204490391184
+    },
+    "BMI": {
+      "mean": 0.027709876543209912,
+      "std": 0.010681989522914596
+    },
+    "DiabetesPedigreeFunction": {
+      "mean": 0.008407407407407459,
+      "std": 0.012183121143059588
+    },
+    "Age": {
+      "mean": 0.052814814814814856,
+      "std": 0.013668322694006363
+    }
+  }
+}

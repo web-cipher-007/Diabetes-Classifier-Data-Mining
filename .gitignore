@@ -1,0 +1,26 @@
+# uv and Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Notebook and tool caches
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local development tooling
+.agents/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Build products and generated output
+build/
+dist/
+out/*
+!out/models/
+!out/models/*.joblib
